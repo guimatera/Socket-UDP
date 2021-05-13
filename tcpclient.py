@@ -2,7 +2,7 @@ from socket import *
 
 # Nome ou endereço IP e numero da porta socket do servidor
 server_name = 'servername'
-server_port = 2021
+server_port = 8000
 # Criando socket chamado client_socket com endereço tipo IPV4 e protocolo TCP
 client_socket = socket(AF_INET, SOCK_STREAM)
 # Estabelecendo conexão com servidor antes do envio de dados
