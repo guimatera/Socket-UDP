@@ -1,9 +1,9 @@
 from socket import *
 
-server_port = 2021
+server_port = 8000
 server_socket = socket(AF_INET,SOCK_STREAM)
 # Cria socket no numero da porta declarada
-server_socket.bind(['', server_port])
+server_socket.bind(('', server_port))
 # Nessa parte, o programa 'escuta' as requisições do cliente. 1 é o numero máximo de conexoes em fila.
 server_socket.listen(1)
 print ('The server is ready to receive')
